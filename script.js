@@ -7,7 +7,7 @@ const tracks = [
     name: "TETORIS",
     artist: "Kasane Teto",
     cover: "https://raw.githubusercontent.com/Hacker222G/Kirpichify/main/covers/tetoris.png",
-    audio: "https://example.com/track.mp3"
+    audio: "https://raw.githubusercontent.com/Hacker222G/Kirpichify/refs/heads/main/music/%E6%9F%8A%E3%83%9E%E3%82%B0%E3%83%8D%E3%82%BF%E3%82%A4%E3%83%88%20-%20%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9.mp3"
   },
   // ... остальные треки ...
 ];
