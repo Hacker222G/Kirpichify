@@ -32,6 +32,7 @@ h1, h2, h3 {
 .logo {
   font-size: 24px;
   color: #1db954;
+  text-shadow: 0 0 10px #1db954;
 }
 
 .nav {
@@ -48,10 +49,12 @@ h1, h2, h3 {
   margin-right: 15px;
   cursor: pointer;
   transition: transform 0.2s;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
 }
 
 .create-btn:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
 }
 
 .search {
@@ -62,10 +65,12 @@ h1, h2, h3 {
   border-radius: 8px;
   margin-right: 15px;
   transition: width 0.3s;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .search:focus {
   width: 400px;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .premium-btn,
@@ -77,11 +82,13 @@ h1, h2, h3 {
   border-radius: 8px;
   margin-right: 10px;
   transition: transform 0.2s;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
 }
 
 .premium-btn:hover,
 .install-btn:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
 }
 
 .avatar {
@@ -89,6 +96,7 @@ h1, h2, h3 {
   height: 35px;
   border-radius: 50%;
   margin-left: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
 }
 
 /* Сайдбар */
@@ -102,11 +110,13 @@ h1, h2, h3 {
   padding: 20px;
   overflow-y: auto;
   transition: transform 0.3s;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .sidebar h2 {
   margin-bottom: 15px;
   color: #b3b3b3;
+  text-shadow: 0 0 5px #b3b3b3;
 }
 
 .menu li {
@@ -121,10 +131,12 @@ h1, h2, h3 {
   padding: 10px;
   border-radius: 8px;
   transition: background 0.2s;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .menu a:hover {
   background: linear-gradient(45deg, #282828, #363636);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Основное содержимое */
@@ -156,10 +168,12 @@ h1, h2, h3 {
   margin-right: 20px;
   scroll-snap-align: start;
   transition: transform 0.2s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .carousel .card:hover {
   transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 /* Карточки */
@@ -168,26 +182,39 @@ h1, h2, h3 {
   border-radius: 12px;
   overflow: hidden;
   cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .card img {
   width: 100%;
   height: 250px;
   object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
 }
 
 .info {
   padding: 15px;
+  background: linear-gradient(135deg, #282828, #363636);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  transition: all 0.3s ease;
 }
 
 .info h3 {
   font-size: 18px;
   margin-bottom: 5px;
+  text-shadow: 0 0 5px #b3b3b3;
 }
 
 .info p {
   color: #b3b3b3;
   font-size: 14px;
+  text-shadow: 0 0 3px #b3b3b3;
 }
 
 /* Плеер */
@@ -203,6 +230,8 @@ h1, h2, h3 {
   justify-content: space-between;
   border-top: 1px solid #333;
   z-index: 100;
+  transition: all 0.3s ease;
+  box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .controls button {
@@ -213,10 +242,12 @@ h1, h2, h3 {
   font-size: 24px;
   cursor: pointer;
   transition: color 0.2s;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .controls button:hover {
   color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .play-btn {
@@ -228,6 +259,7 @@ h1, h2, h3 {
   display: flex;
   align-items: center;
   gap: 20px;
+  transition: all 0.3s ease;
 }
 
 .cover {
@@ -235,11 +267,13 @@ h1, h2, h3 {
   height: 50px;
   border-radius: 8px;
   object-fit: cover;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .details h3 {
   font-size: 16px;
   margin: 0;
+  text-shadow: 0 0 3px #b3b3b3;
 }
 
 .progress-slider {
@@ -248,6 +282,7 @@ h1, h2, h3 {
   height: 4px;
   background: #444;
   outline: none;
+  transition: all 0.3s ease;
 }
 
 .progress-slider::-webkit-slider-thumb {
@@ -258,6 +293,14 @@ h1, h2, h3 {
   background: #1db954;
   border-radius: 50%;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.time {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #b3b3b3;
+  text-shadow: 0 0 3px #b3b3b3;
 }
 
 /* Адаптивность */
