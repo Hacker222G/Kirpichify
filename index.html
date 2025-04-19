@@ -7,21 +7,83 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Шапка с навигацией -->
+  <!-- Шапка -->
   <header class="header">
-    <h1>Кирпичифай</h1>
+    <div class="logo">Кирпичифай</div>
     <nav class="nav">
-      <a href="#/" class="nav-link active">Главная</a>
-      <a href="#/artists" class="nav-link">Артисты</a>
+      <button class="btn create-btn">+ Создать</button>
+      <input type="text" class="search" placeholder="Что хочешь включить?">
+      <div class="actions">
+        <button class="btn premium-btn">Узнать больше о Premium</button>
+        <button class="btn install-btn">Установить приложение</button>
+        <img src="https://via.placeholder.com/30" alt="Аватар" class="avatar">
+      </div>
     </nav>
-    <!-- Поисковая строка -->
-    <input type="text" class="search" placeholder="Поиск...">
   </header>
 
-  <!-- Контейнер для контента (страницы) -->
-  <div class="content"></div>
+  <!-- Сайдбар -->
+  <aside class="sidebar">
+    <h2>Моя медиатека</h2>
+    <ul class="menu">
+      <li><a href="#">Исполнители</a></li>
+      <li><a href="#">Любимые треки</a></li>
+      <li><a href="#">Плейлист • 6 треков</a></li>
+      <li><a href="#">Недавние</a></li>
+    </ul>
+  </aside>
 
-  <!-- Подключаем скрипт -->
+  <!-- Основное содержимое -->
+  <main class="content">
+    <!-- Табы -->
+    <div class="tabs">
+      <button class="tab active">Все</button>
+      <button class="tab">Музыка</button>
+      <button class="tab">Подкасты</button>
+      <button class="tab">Аудиокниги</button>
+    </div>
+
+    <!-- Рекомендации -->
+    <section class="recommendations">
+      <h2>Послушай сегодня</h2>
+      <div class="grid">
+        <!-- Первая карточка с вашими данными -->
+        <div class="card" data-audio="https://raw.githubusercontent.com/Hacker222G/Kirpichify/refs/heads/main/music/%E6%9F%8F%E3%83%9E%E3%82%B0%E3%83%8D%E3%82%BF%E3%82%A4%E3%83%88%20-%20%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9.mp3">
+          <img src="https://raw.githubusercontent.com/Hacker222G/Kirpichify/refs/heads/main/covers/tetoris.png" alt="Обложка">
+          <h3>TETORIS</h3>
+          <p>Kasane Teto</p>
+        </div>
+        <!-- Остальные карточки (примеры) -->
+        <div class="card">
+          <img src="https://via.placeholder.com/200x200" alt="Обложка">
+          <h3>Track 2</h3>
+          <p>Artist 2</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Похожие треки -->
+    <section class="similar-tracks">
+      <h2>Похоже на:</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://via.placeholder.com/200x200" alt="Обложка">
+          <h3>Track Name</h3>
+          <p>Artist Name</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Подвал -->
+  <footer class="footer">
+    <div class="cookie-banner">
+      Мы используем файлы cookie... <a href="#">Подробнее</a>
+    </div>
+  </footer>
+
+  <!-- Добавлен элемент audio -->
+  <audio id="player"></audio>
+
   <script src="script.js"></script>
 </body>
 </html>
