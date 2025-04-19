@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kirpichify</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,10 +13,10 @@
     <div class="logo">Кирпичифай</div>
     <nav class="nav">
       <button class="btn create-btn">+ Создать</button>
-      <input type="text" class="search" placeholder="Что хочешь включить?">
+      <input type="text" class="search" placeholder="Что хотите включить?">
       <div class="actions">
-        <button class="btn premium-btn">Узнать больше о Premium</button>
-        <button class="btn install-btn">Установить приложение</button>
+        <button class="btn premium-btn">Premium</button>
+        <button class="btn install-btn">Установить</button>
         <img src="https://via.placeholder.com/30" alt="Аватар" class="avatar">
       </div>
     </nav>
@@ -34,19 +35,10 @@
 
   <!-- Основное содержимое -->
   <main class="content">
-    <!-- Табы -->
-    <div class="tabs">
-      <button class="tab active">Все</button>
-      <button class="tab">Музыка</button>
-      <button class="tab">Подкасты</button>
-      <button class="tab">Аудиокниги</button>
-    </div>
-
     <!-- Рекомендации -->
     <section class="recommendations">
       <h2>Послушай сегодня</h2>
-      <div class="grid">
-        <!-- Пример карточки -->
+      <div class="carousel">
         <div class="card" data-audio="https://example.com/track.mp3">
           <img src="https://raw.githubusercontent.com/Hacker222G/Kirpichify/main/covers/tetoris.png" alt="Обложка">
           <div class="info">
@@ -54,7 +46,7 @@
             <p>Kasane Teto</p>
           </div>
         </div>
-        <!-- ... остальные карточки ... -->
+        <!-- ... другие карточки ... -->
       </div>
     </section>
 
@@ -73,13 +65,6 @@
     </section>
   </main>
 
-  <!-- Подвал -->
-  <footer class="footer">
-    <div class="cookie-banner">
-      Мы используем файлы cookie... <a href="#">Подробне</a>
-    </div>
-  </footer>
-
   <!-- Плеер -->
   <div class="player">
     <div class="controls">
@@ -94,7 +79,9 @@
         <p class="artist-name"></p>
       </div>
     </div>
-    <input type="range" min="0" max="100" value="0" class="volume-slider">
+    <div class="progress">
+      <input type="range" min="0" max="100" value="0" class="progress-slider">
+    </div>
   </div>
 
   <script src="script.js"></script>
