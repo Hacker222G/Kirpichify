@@ -46,18 +46,15 @@
     <section class="recommendations">
       <h2>Послушай сегодня</h2>
       <div class="grid">
-        <!-- Первая карточка с вашими данными -->
-        <div class="card" data-audio="https://raw.githubusercontent.com/Hacker222G/Kirpichify/refs/heads/main/music/%E6%9F%8F%E3%83%9E%E3%82%B0%E3%83%8D%E3%82%BF%E3%82%A4%E3%83%88%20-%20%E3%83%86%E3%83%88%E3%83%AA%E3%82%B9.mp3">
-          <img src="https://raw.githubusercontent.com/Hacker222G/Kirpichify/refs/heads/main/covers/tetoris.png" alt="Обложка">
-          <h3>TETORIS</h3>
-          <p>Kasane Teto</p>
+        <!-- Пример карточки -->
+        <div class="card" data-audio="https://example.com/track.mp3">
+          <img src="https://raw.githubusercontent.com/Hacker222G/Kirpichify/main/covers/tetoris.png" alt="Обложка">
+          <div class="info">
+            <h3>TETORIS</h3>
+            <p>Kasane Teto</p>
+          </div>
         </div>
-        <!-- Остальные карточки (примеры) -->
-        <div class="card">
-          <img src="https://via.placeholder.com/200x200" alt="Обложка">
-          <h3>Track 2</h3>
-          <p>Artist 2</p>
-        </div>
+        <!-- ... остальные карточки ... -->
       </div>
     </section>
 
@@ -67,8 +64,10 @@
       <div class="grid">
         <div class="card">
           <img src="https://via.placeholder.com/200x200" alt="Обложка">
-          <h3>Track Name</h3>
-          <p>Artist Name</p>
+          <div class="info">
+            <h3>Track Name</h3>
+            <p>Artist Name</p>
+          </div>
         </div>
       </div>
     </section>
@@ -81,8 +80,22 @@
     </div>
   </footer>
 
-  <!-- Добавлен элемент audio -->
-  <audio id="player"></audio>
+  <!-- Плеер -->
+  <div class="player">
+    <div class="controls">
+      <button class="prev-btn">&#10094;</button>
+      <button class="play-btn">▶</button>
+      <button class="next-btn">&#10095;</button>
+    </div>
+    <div class="track-info">
+      <img src="" alt="Обложка" class="cover">
+      <div class="details">
+        <h3 class="track-name"></h3>
+        <p class="artist-name"></p>
+      </div>
+    </div>
+    <input type="range" min="0" max="100" value="0" class="volume-slider">
+  </div>
 
   <script src="script.js"></script>
 </body>
